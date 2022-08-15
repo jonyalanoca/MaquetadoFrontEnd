@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Mi web</title>  
+</head>
+<body>
+    <input type="checkbox" id="seccionCambioLogin">
+    <nav class="navbar" id="nav">
+        <a href="#" class="salirContainer">
+            <svg class="salir" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 0.5H49.5V49.5H0.5V0.5Z" stroke="none"/>
+                <path class="salir__linea" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 5.5H34.5V13.9167H33.5V6.5H10.5V43.5H33.5V36.0833H34.5V44.5H9.5V5.5Z" stroke="black"/>
+                <path class="salir__linea" d="M27 26V24H35V18L45.5 24.5L35 30.7352V26H27Z" stroke="black"/>
+            </svg>
+        </a>
+        <a class="navbar__item navbar__item--inicio" href="#header">Inicio</a>
+        <a class="navbar__item navbar__item--sobre" href="#about">Sobre mí</a>
+        <a class="navbar__item navbar__item--proyectos" href="#proyectos">Proyectos</a>
+        <a class="navbar__item navbar__item--estudios" href="#estudios">Estudios</a>
+        <a class="navbar__item navbar__item--contacto" href="#contacto">Contactos</a>
+        <div class="capa"></div>
+        <div class="imagenDetras"></div>
+        <h2 class="texto">
+            <span class="texto--inicio">INICIO</span><span class="texto--sobre">SOBRE_MÍ</span><span class="texto--proyectos">PROYECTOS</span><span class="texto--estudios">ESTUDIOS</span><span class="texto--contacto">CONTACTO</span>
+        </h2>
+    </nav>
+    <section class="login">
+        <label class="salirContainer salirContainer--login" for="seccionCambioLogin">
+            <svg class="salir" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 0.5H49.5V49.5H0.5V0.5Z" stroke="none"/>
+                <path class="salir__linea" fill-rule="evenodd" clip-rule="evenodd" d="M9.5 5.5H34.5V13.9167H33.5V6.5H10.5V43.5H33.5V36.0833H34.5V44.5H9.5V5.5Z" stroke="black"/>
+                <path class="salir__linea" d="M27 26V24H35V18L45.5 24.5L35 30.7352V26H27Z" stroke="black"/>
+            </svg>
+        </label>
+        <div class="login__cardContainer">
+            <form class="login__form" action="">
+                <input id="loginPass" class="login__box" focus type="password" placeholder=" ">
+                <label for="loginPass" class="login__label">Contraceña</label>
+                <svg  class="login__lock"  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svgCandado" d="M9.7 21.5H40.3C40.4105 21.5 40.5 21.5895 40.5 21.7V42C40.5 42.8284 39.8284 43.5 39 43.5H11C10.1716 43.5 9.5 42.8284 9.5 42V21.7C9.5 21.5895 9.58954 21.5 9.7 21.5Z" stroke="black"/>
+                    <path d="M26.6096 32H24.3904C24.1609 32 23.961 32.1561 23.9053 32.3787L22.1553 39.3787C22.0764 39.6943 22.3151 40 22.6404 40H28.3596C28.6849 40 28.9236 39.6943 28.8447 39.3787L27.0947 32.3787C27.039 32.1561 26.839 32 26.6096 32Z" fill="black" stroke="black"/>
+                    <path d="M28 31C28 32.3807 26.8807 33.5 25.5 33.5C24.1193 33.5 23 32.3807 23 31C23 29.6193 24.1193 28.5 25.5 28.5C26.8807 28.5 28 29.6193 28 31Z" fill="black" stroke="black"/>
+                    <path class="svgCandado" d="M33.2104 8.54127C35.232 11.7056 36.414 15.986 36.4955 20.5H33.8288C33.7488 17.35 32.9148 14.3335 31.4617 12.059C29.9327 9.66592 27.8011 8.23623 25.5 8.23623C23.1989 8.23623 21.0673 9.66592 19.5383 12.059C18.0852 14.3335 17.2512 17.35 17.1712 20.5H14.5045C14.586 15.986 15.768 11.7056 17.7896 8.54127C19.8868 5.2588 22.6731 3.5 25.5 3.5C28.3269 3.5 31.1132 5.2588 33.2104 8.54127Z" stroke="black"/>
+                    <path d="M0.5 0.5H49.5V49.5H0.5V0.5Z" stroke="none"/>
+                </svg>
+                <svg class="lectura" width="354" height="465" viewBox="0 0 354 465" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M252 399.661L243.837 419L158 399.543L170.048 371L252 399.661Z" fill="#FFB7B7"/> <path class="svg__zapato" d="M275 401.764L248.394 465L247.518 464.693C240.37 462.185 234.606 457.186 231.493 450.797C228.38 444.408 228.174 437.152 230.92 430.624L230.921 430.622L247.171 392L275 401.764Z" fill="#2F2E41"/> <path class="svg__sobrante" d="M123.449 167.836L86.0151 164.245L67.8041 256.775C67.4908 261.412 69.3266 266.075 72.9184 269.764C76.5102 273.453 81.5724 275.876 87.0206 276.513L110.668 279.279L123.449 167.836Z" fill="#E5E5E5"/> <path class="svg__brazo" d="M146.52 164.923L110.237 155.681L68.7969 250.801C67.3155 255.654 67.9628 260.848 70.6002 265.269C73.2375 269.69 77.6552 272.987 82.9069 274.453L105.701 280.817L146.52 164.923Z" fill="#E5E5E5"/> <path class="svg__sobrante" d="M257.379 152.292L230.722 150.114L222.001 248.601C227.886 249.169 233.81 248.864 239.406 247.707C245.001 246.549 250.147 244.563 254.523 241.873C258.899 239.183 262.411 235.846 264.839 232.071C267.268 228.295 268.561 224.162 268.638 219.93L257.379 152.292Z" fill="#E5E5E5"/> <path class="svg__brazo" d="M222.127 150.807L194.623 161.38L234.921 268.013C241.036 265.769 246.757 262.6 251.728 258.701C256.698 254.802 260.812 250.259 263.813 245.353C266.813 240.448 268.635 235.286 269.167 230.19C269.698 225.094 268.926 220.172 266.899 215.733L222.127 150.807Z" fill="#E5E5E5"/> <path d="M104.351 314.767C103.744 318.277 102.863 321.743 101.715 325.138C100.423 328.461 98.4267 331.534 97.2447 334.892C93.4768 345.594 98.7002 357.527 107.043 365.788C114.277 372.923 123.616 377.993 133.932 380.384C141.458 382.115 149.283 382.364 157.039 382.604C178.516 383.27 200.545 383.866 220.896 377.556C227.326 375.513 233.536 372.934 239.448 369.851C241.315 369.038 242.96 367.854 244.262 366.386C245.814 364.366 246.013 361.746 245.999 359.278C245.954 350.955 244.108 342.674 244.546 334.36C244.789 329.755 245.732 325.154 245.268 320.563C244.625 315.35 242.236 310.445 238.427 306.52C234.618 302.595 229.575 299.843 223.989 298.639C218.216 297.505 212.228 298.123 206.351 298.64C191.094 299.98 175.773 300.606 160.447 300.516C144.787 300.425 129.224 298.239 113.642 298.011C109.034 297.944 109.127 299.242 107.66 303.319C106.309 307.071 105.204 310.894 104.351 314.767V314.767Z" fill="#2F2E41"/> <path d="M43.2479 307.288C39.0404 306.313 34.705 305.888 30.3692 306.025C25.8136 306.258 21.3638 307.381 17.3157 309.322C13.2676 311.263 9.71389 313.976 6.89097 317.281C4.06806 320.587 2.04058 324.408 0.943337 328.492C-0.153902 332.576 -0.295757 336.828 0.527214 340.966C1.57786 345.449 3.29519 349.776 5.63045 353.825C9.04594 360.217 13.1423 366.593 19.4652 370.689C23.164 373.085 27.4448 374.579 31.6748 376.048L64.9764 387.617C69.8754 389.318 74.7752 391.02 79.7227 392.598C104.579 400.521 130.493 405.271 156.745 406.718C164.741 407.157 172.858 407.279 180.659 405.601C182.51 405.202 184.485 404.608 185.557 403.161C186.192 402.141 186.566 401.001 186.651 399.828L188.7 386.599C188.989 384.737 189.266 382.776 188.526 381.023C187.587 378.8 185.234 377.401 182.991 376.213C161.097 364.618 135.534 358.221 117.106 342.307C112.768 338.56 109.137 332.622 103.867 330.077C97.8894 327.191 90.8501 325.544 84.6719 322.885C71.1655 317.071 57.8862 310.391 43.2479 307.288Z" fill="#2F2E41"/> <path opacity="0.1" d="M76.1058 325.101C88.0295 328.57 138.371 352.603 147 360.995C145.843 361.381 106.601 340.962 105.424 340.634C94.7199 337.652 83.9569 334.649 73.7922 330.284C71.7474 329.406 60.5077 325.279 61.0168 322.884C61.5911 320.18 73.989 324.485 76.1058 325.101Z" fill="black"/> <path d="M147.424 120.379L115.538 142.543C115.538 142.543 81.8913 143.507 83.0282 163.197C84.1651 182.887 97.6313 276.112 97.6313 276.112L100.553 308.189L155.973 322.646C185.917 330.457 217.553 331.077 247.835 324.448V324.448L241.249 292.268C241.249 292.268 267.918 146.118 251.852 139.683C235.786 133.248 225.745 135.087 225.745 135.087L205.607 119L147.424 120.379Z" fill="#E5E5E5"/> <path d="M242 82.5016C242 112.258 212.898 107.757 177 107.757C141.101 107.757 112 112.258 112 82.5016C112 52.7453 126.215 0 177 0C229.534 0 242 52.7453 242 82.5016Z" fill="#2F2E41"/> <path d="M210.545 92.163C227.533 75.175 227.533 47.6321 210.545 30.6442C193.557 13.6562 166.014 13.6562 149.026 30.6442C132.039 47.6321 132.038 75.1751 149.026 92.163C166.014 109.151 193.557 109.151 210.545 92.163Z" fill="#FFB7B7" stroke="000"/> <path d="M126.464 60.3018H143.669L151.26 39.0485L152.778 60.3018H161.001L165.429 47.9041L166.314 60.3018H227.418C227.418 48.0889 222.566 36.3762 213.93 27.7404C205.294 19.1045 193.582 14.2529 181.369 14.2529H172.513C160.3 14.2529 148.587 19.1045 139.952 27.7404C131.316 36.3762 126.464 48.0889 126.464 60.3018V60.3018Z" fill="#2F2E41"/> <path class="svg__brazo svg__cuaderno" d="M218 103H131V208H218V103Z" fill="#6C63FF"/> <path d="M138 398.661L146.251 418L233 398.543L220.823 370L138 398.661Z" fill="#FFB7B7"/> <path class="svg__zapato" d="M143.224 391L159.121 429.622L159.122 429.624C161.808 436.152 161.606 443.408 158.561 449.797C155.516 456.186 149.877 461.185 142.884 463.693L142.027 464L116 400.764L143.224 391Z" fill="#2F2E41"/> <path d="M310.38 299.662C317.301 298.065 324.476 297.614 331.569 298.33C337.234 298.904 343.07 300.354 347.206 303.961C352.24 308.352 353.857 315.141 353.992 321.521C354.214 334.229 349.632 346.613 341.031 356.558C338.93 359.074 336.432 361.286 333.62 363.121C330.587 364.867 327.353 366.3 323.979 367.395L249.137 394.553C229.447 401.697 209.688 408.862 189.151 413.572C188.035 414.068 186.75 414.136 185.579 413.76C184.408 413.384 183.448 412.596 182.909 411.569C182.892 411.537 182.876 411.506 182.861 411.474C176.303 402.857 170.802 393.599 166.457 383.87C166.252 383.639 166.109 383.365 166.043 383.073C165.976 382.78 165.987 382.477 166.075 382.19C166.163 381.902 166.324 381.638 166.546 381.42C166.769 381.202 167.045 381.036 167.351 380.937L220.287 352.956C224.079 350.951 227.913 348.918 231.062 346.126C233.35 344.086 235.223 341.687 236.594 339.041C237.691 336.933 237.793 331.957 239.195 330.399C240.567 328.873 245.262 328.751 247.43 328.151C250.487 327.289 253.482 326.248 256.394 325.033C268.236 320.16 278.781 313.079 290.132 307.372C296.499 304.024 303.303 301.433 310.38 299.662V299.662Z" fill="#2F2E41"/> <path opacity="0.1" d="M280.459 321.321C271.419 327.591 259.714 333.354 250.754 339.789C247.696 341.985 196.721 368.449 196 371.964C204.359 373.265 257.606 338.867 265.224 335.434C272.843 332.002 279.596 327.162 286.288 322.357C287.993 321.133 295.221 317.452 290.325 316.084C287.567 315.313 282.495 320.067 280.459 321.321Z" fill="black"/> <path class="svg__brazo" opacity="0.17" d="M101 170L102.201 160.73C102.201 160.73 147 164 140 175C133 186 116 187 116 187L101 170Z" fill="black"/> <path class="svg__brazo" d="M134.816 129.693C137.382 129.975 139.854 130.822 142.054 132.173C144.254 133.524 146.128 135.345 147.541 137.506V137.506C148.828 139.478 149.704 141.689 150.115 144.008C150.526 146.327 150.465 148.704 149.934 150.999C149.403 153.293 148.414 155.456 147.026 157.358C145.638 159.261 143.88 160.863 141.858 162.069C141.116 162.507 140.342 162.888 139.542 163.207L112.006 247.435C111.208 249.097 110.09 250.585 108.715 251.813C107.34 253.041 105.736 253.985 103.995 254.592C102.254 255.198 100.41 255.454 98.5699 255.345C96.7295 255.237 94.9288 254.765 93.2712 253.958C91.6136 253.151 90.1319 252.025 88.9112 250.643C87.6905 249.262 86.7549 247.653 86.1582 245.908C85.5615 244.164 85.3154 242.319 85.4342 240.479C85.553 238.639 86.0342 236.841 86.8502 235.188L116.134 151.896C115.337 149.14 115.23 146.23 115.825 143.423C116.42 140.617 117.698 138 119.545 135.805C121.392 133.609 123.752 131.903 126.415 130.837C129.079 129.771 131.964 129.378 134.816 129.693Z" fill="#FFB7B7"/> <path class="svg__brazo" d="M101.411 161.52C101.411 161.52 117.189 188.477 140 175L117.893 259.599H99.2677L80 256L85.3949 221.048L101.411 161.52Z" fill="#E5E5E5"/> <path d="M216.657 202.447L203.587 184.502C203.587 184.502 209.869 165.889 234.228 172.695C234.228 172.695 249.728 207.392 216.657 202.447Z" fill="#E5E5E5"/> <path class="svg__brazo" opacity="0.17" d="M214.071 179.945L201 162C201 162 207.282 143.387 231.641 150.194C231.641 150.194 247.142 184.89 214.071 179.945Z" fill="black"/> <path class="svg__brazo" d="M217.532 117.249C221.302 119.002 224.319 122.05 226.032 125.84C227.745 129.629 228.041 133.907 226.866 137.896L256.15 221.188C256.966 222.841 257.447 224.64 257.566 226.479C257.685 228.319 257.439 230.164 256.842 231.909C256.246 233.653 255.31 235.263 254.089 236.644C252.869 238.026 251.387 239.152 249.729 239.959C248.072 240.766 246.271 241.238 244.43 241.346C242.59 241.455 240.746 241.199 239.005 240.593C237.264 239.986 235.66 239.042 234.285 237.813C232.91 236.585 231.792 235.097 230.994 233.435L203.458 149.207C202.658 148.888 201.884 148.507 201.142 148.069C199.12 146.863 197.362 145.261 195.974 143.359C194.586 141.456 193.597 139.293 193.066 136.999C192.535 134.704 192.474 132.327 192.885 130.008C193.296 127.689 194.172 125.478 195.459 123.506V123.506C196.872 121.345 198.746 119.524 200.946 118.173C203.146 116.823 205.618 115.975 208.184 115.693C211.384 115.33 214.622 115.869 217.532 117.249Z" fill="#FFB7B7"/> <path class="svg__brazo" d="M201 162C201 162 222.566 175.086 231.641 150.194L262.03 230.208L253 246L251.694 246.109C246.307 246.558 240.892 245.693 235.913 243.588C230.934 241.483 226.541 238.2 223.11 234.023V234.023C216.113 225.502 211.35 215.372 209.251 204.548L201 162Z" fill="#E5E5E5"/> </svg>
+                <input class="boton--login" type="submit">
+            </form>
+        </div>
+    </section>
+    <header class="header" id="header">
+        <a href="#nav" class="burgerContainer">
+            <svg class="burger" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 0.5H49.5V49.5H0.5V0.5Z" stroke="none"/>
+                <path class="burger__linea" d="M6.5 9.5H43.5V16.5H6.5V9.5Z" stroke="black"/>
+                <path class="burger__linea" d="M6.5 21.5H43.5V28.5H6.5V21.5Z" stroke="black"/>
+                <path class="burger__linea" d="M6.5 33.5H43.5V40.5H6.5V33.5Z" stroke="black"/>
+            </svg>              
+        </a>
+        <label class="loginContainer" for="seccionCambioLogin">
+            <svg class="log" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 0.5H49.5V49.5H0.5V0.5Z" stroke="none"/>
+                <path class="login__linea" d="M33.5 15.5C33.5 20.4706 29.4706 24.5 24.5 24.5C19.5294 24.5 15.5 20.4706 15.5 15.5C15.5 10.5294 19.5294 6.5 24.5 6.5C29.4706 6.5 33.5 10.5294 33.5 15.5Z" stroke="black"/>
+                <path class="login__linea" d="M38.7978 30.9275C42.3276 34.2808 44.3586 38.7829 44.4929 43.5H25L5.50712 43.5C5.64144 38.7829 7.67242 34.2808 11.2022 30.9275C14.8575 27.455 19.8202 25.5 25 25.5C30.1798 25.5 35.1425 27.455 38.7978 30.9275Z" stroke="black"/>
+            </svg>
+        </label>
+        <figure class="header__perfil"><img src="imagenes/sergio.jpg" alt="imagen Perfil"></figure> 
+        <div class="header__textContainer">
+            <div>
+                <h1><span class="brakets">{ }</span>Hola,</h1>
+                <h2>Soy Jonathan A.</h2>
+                <h2 class="text__slider">
+                    <p class="slider__dev">Desarrollador </p>
+                    <div class="slider__animacion"> 
+                        <p>Front End</p>
+                        <p>Back End</p>
+                    </div>
+                    <p class="slider__dev">jr. </p>
+                </h2>
+            </div>  
+            <p class="header__text">Hagamos juntos realidad esa idea perfecta para tu negocio.</p>
+            <div class="botones">
+                <a class="boton" href="#"> <span class="btn__span">Ver CV</span></a>
+                <a class="boton" href="#contacto"><span class="btn__span">Trabajemos</span></a>
+            </div>
+        </div> 
+    </header>
+    <section class="seccion seccion--about" id="about">
+        <h2 class="subtiluloPrincipal">Sobre mí</h2>
+        <div class="about__container">
+            <div class="about__descripcion">
+                <div class="about__parafo">
+                    Soy un apasionado por el desarrollo web tanto en el front como en el back-end. Oriundo y actual residencia en Buenos Aires. <br>
+                    Tuve mi primer acercamiento con la programación, fue casual en la escuela secundaria, aprendí que solo se necesita una idea, creatividad y código para crear soluciones y donde el límite está en la imaginación. <br>
+                    Actualmente, me encuentro estudiando en la universidad, aprendiendo buenas prácticas y trabajando en equipo. <br>
+                    Además, me considero autodidacta tomando cursos, uniéndome a programas y generando proyectos propios.
+                </div>
+                <div class="about__lista">
+                    <ul >
+                        <li><img class="icono" src="imagenes/school.svg"> Escuela Tecnica 24 -Defensa de Buenos Aires</li>
+                        <li><img class="icono" src="imagenes/university.svg"> UTN-Fra  Universidad Tecnica Nacional Avellanda (en Curso)</li>
+                        <li><img class="icono" src="imagenes/side.svg">Argentina - Buenos Aires</li>
+                    </ul>
+                </div>
+            </div>
+            <figure class="about__retratoCont">
+                <img src="imagenes/me.jpeg" alt="Imagen de perfil">
+            </figure>
+        </div>
+         <h3 class="subtitulo3--about">¿Por que trabajar conmigo?</h3>
+        <div class="about__conteinerWhy">
+            <div class="about__razones__card">
+                <img src="imagenes/estructura.svg">
+                <h4 class="subtitulo4">Proyecto escalable</h4>
+                <p>Una base sólida, buenas prácticas y la experiencia garantizan que tus páginas serán robustas, escalables y disponible a todo el mundo</p>
+            </div>
+            <div class="about__razones__card">
+                <img src="imagenes/paleta.svg">
+                <h4 class="subtitulo4">Diseño moderno</h4>
+                <p>Un diseño único y original para tu web es importante, por eso cuento con los diseños trending topic y en contante actualización.</p>
+            </div>
+            <div class="about__razones__card">
+                <img src="imagenes/grupo.svg">
+                <h4 class="subtitulo4">Trabajo en equipo</h4>
+                <p>Trabajo de forma freelance o en equipo, presencial o remota. En todas ellas se garantiza que tus proyectos se terminan en tiempo y forma.</p>
+            </div>
+            <div class="about__razones__card">
+                <img src="imagenes/reloj.svg">
+                <h4 class="subtitulo4">Rapidez y sencillez</h4>
+                <p>La comunicación con el cliente es una prioridad para llevar a cabo los requisitos, cumplir con las espectativas y rapida solicion a los cambios requeridos.</p>
+            </div>
+        </div>
+    </section>
+    <section class="seccion seccion--proyectos" id="proyectos">
+        <h2 class="subtiluloPrincipal">Proyectos</h2>
+        <div class="proyectos__proyectoCont">
+            <div class="proyectos__descripcion">
+                <div class="proyectos__descripcion__titulo subtitulo3">Huddle</div>
+                <div class="proyectos__descripcion__parrafo">
+                    Huddle Landing page es una página empresarial con un estilo minimalista. <br>
+                    Reto ofrecido por Frontend Mentor con el propósito de aplicar, demostrar y ampliar las habilidades en el diseño y estructura de una página web moderna. <br> 
+                    Diseño responsivo para navegar tanto en desktop como en mobile.
+                </div>
+                <div class="proyectos__imgMiniCont">
+                    <figure class="proyectos__imgMini"><img src="imagenes/huddle1.png" alt="Huddle"></figure>
+                    <figure class="proyectos__imgMini"><img src="imagenes/huddle2.png" alt="Huddle"></figure>
+                    <figure class="proyectos__imgMini proyectos__imgMini--ultimo"><img src="imagenes/huddle3.png" alt="Huddle"></figure>
+                </div>
+            </div>
+            <figure class="proyectos__imgCont">
+                <img class="proyectos__imgCont__img" src="imagenes/huddle.png" alt="Imagen ilustrativa del proyecto">
+                <div class="proyectos__imgCont__links">
+                    <div class="proyectos__imgCont__links__lenguajes">
+                        <svg class="links__lenguajes__svg" width="150" height="150" viewbox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M38.933 116.983 31 28h87.176l-7.941 88.97-35.7 9.897-35.602-9.884Z" fill="#1572B6"/><path d="m74.589 119.302 28.847-7.997 6.787-76.03H74.589v84.027Z" fill="#33A9DC"/><path d="M74.589 67.514H89.03l.997-11.176H74.59V45.425h27.366l-.262 2.928-2.683 30.074H74.59V67.514Z" fill="#fff"/><path d="m74.653 95.857-.048.014-12.154-3.281-.777-8.705H50.72l1.529 17.136 22.355 6.205.05-.014V95.857Z" fill="#EBEBEB"/><path d="M88.102 77.966 86.787 92.58l-12.172 3.285v11.355l22.374-6.2.164-1.844 1.898-21.211H88.102Z" fill="#fff"/><path d="M74.626 45.425v10.913H48.265l-.219-2.452-.497-5.533-.261-2.928h27.338Zm-.037 22.09V78.43H62.588l-.219-2.452-.498-5.533-.26-2.928h12.978Z" fill="#EBEBEB"/></svg>                        
+                        <svg class="links__lenguajes__svg" width="150" height="150" viewbox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M39.009 115.904 31 25h88l-8.017 90.89L74.946 126 39.01 115.904Z" fill="#E44D26"/><path d="m75 118.273 29.119-8.171 6.852-77.67H75v85.841Z" fill="#F16529"/><path d="M75 66.147H60.422L59.415 54.73H75V43.582H47.375l.264 2.99 2.707 30.725H75v-11.15Zm0 28.956-.049.013-12.268-3.353-.784-8.891h-11.06l1.543 17.505 22.568 6.34.05-.014v-11.6Z" fill="#EBEBEB"/><path d="M74.962 66.147v11.15h13.565L87.25 91.756l-12.287 3.356v11.6l22.585-6.335.165-1.883 2.589-29.352.268-2.995H74.961Zm0-22.565V54.73h26.61l.221-2.505.503-5.652.263-2.991H74.962Z" fill="#fff"/></svg>
+                    </div>
+                    <div class="proyectos__imgCont__links__botones">
+                            <a class="boton" href="https://jonyalanoca.github.io/Huddle-landing-page.github.io/" target="_blank"> <span class="btn__span">Visitar Web</span></a>
+                            <a class="boton" href="https://github.com/jonyalanoca/Huddle-landing-page.github.io" target="_blank"><span class="btn__span">Ver codigo</span></a>
+                    </div>
+                </div>
+            </figure>
+
+        </div>
+        <svg width="221" height="275" viewBox="0 0 221 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M110 102L6 48.6067L110 3L214 48.6067L110 102Z" stroke="#D83E23" stroke-width="5"/>
+            <path d="M45.1579 104.173V87L102 115.979V270L3 209.358V166.962" stroke="white" stroke-width="5"/>
+            <path d="M117 274V195.058M218 212.074V137.037M218 137.037V62L117 116.116V195.058M218 137.037L117 195.058" stroke="white" stroke-width="5"/>
+            </svg>
+            
+
+    </section>
+    
+    <section class="seccion seccion--estudios" id="estudios">
+        <h2 class="subtiluloPrincipal estudios__titulo">Estudios</h2>
+        <div class="estudiosConteinerPrincipal">
+            <div class="estudios__info">
+                <!-- <h3 class="subtitulo3">Certificados</h3> -->
+                <p class="estudios__descripcion">
+                    ¿Por qué tomo cursos si voy a la Universidad? <br>
+                    Las tecnologías crece día tras día, algunos estándares quedan en desuso u obsoletos. <br>
+                    Es necesario volver a ver las bases y actualizar los nuevos cambios, adquirir nuevas tecnologías. <br><br>
+                    El 2022 fue muy productivo en la adquisición de conocimientos y estos son algunos certificados obtenidos:  
+                </p>
+                <div class="estudiosCertificadosCont">
+                    <div class="ventana">
+                        <div class="certificado"></div>
+                        <div class="certificado"></div>
+                        <div class="certificado"></div>                    
+                    </div>
+                </div>
+                
+            </div>
+            <div class="estudios__lenguajes">
+                <h3 class="subtitulo3">Skills</h2>
+                <div class="lenguajes__skills">
+                    <div class="lenguajeCont">
+                        <div class="descripcioLenguaje">
+                            <h4 class="subtitulo4">PYTHON</h4>
+                            <p class="puntuacion">3/5</p>
+                            <figure class="contEstrellas">
+                                <img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella">
+                            </figure>
+                        </div>
+                        <svg class="lenguajeImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg " viewBox="0 0 150 150"><path d="M75.386 25c-4.29.02-8.384.382-11.989 1.014-10.616 1.857-12.542 5.745-12.542 12.916v9.469H75.94v3.156H41.44c-7.29 0-13.675 4.34-15.673 12.598-2.304 9.463-2.405 15.37 0 25.25C27.55 96.76 31.808 102 39.1 102h8.626V90.648c0-8.2 7.164-15.434 15.672-15.434h25.059c6.976 0 12.543-5.689 12.543-12.625V38.93c0-6.734-5.736-11.792-12.543-12.916-4.312-.71-8.783-1.033-13.071-1.014Zm-13.567 7.616c2.59 0 4.708 2.13 4.708 4.75a4.717 4.717 0 0 1-4.708 4.72 4.71 4.71 0 0 1-4.707-4.72c-.001-2.62 2.106-4.75 4.707-4.75Z" fill="url(#a)"/><path d="M102.165 49.001v10.95c0 8.487-7.308 15.631-15.64 15.631H61.517c-6.85 0-12.517 5.775-12.517 12.53v23.481c0 6.681 5.899 10.612 12.517 12.528 7.925 2.293 15.525 2.709 25.008 0 6.302-1.798 12.518-5.415 12.518-12.528v-9.398H74.036v-3.134h37.526c7.276 0 9.989-4.997 12.52-12.5 2.613-7.724 2.501-15.152 0-25.059C122.283 54.368 118.849 49 111.562 49h-9.397v.001ZM88.1 108.459a4.688 4.688 0 0 1 4.698 4.685c0 2.598-2.103 4.712-4.698 4.712-2.586 0-4.698-2.114-4.698-4.712 0-2.591 2.112-4.685 4.698-4.685Z" fill="url(#b)"/><defs><linearGradient id="a" x1="21.485" y1="27.962" x2="78.875" y2="77.38" gradientUnits="userSpaceOnUse"><stop stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient><linearGradient id="b" x1="99.161" y1="104.231" x2="78.87" y2="75.338" gradientUnits="userSpaceOnUse"><stop stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient></defs></svg>
+                    </div>
+                    <div class="lenguajeCont">
+                        <div class="descripcioLenguaje">    
+                            <h4 class="subtitulo4">HTML</h4>
+                            <p class="puntuacion">4.5/5</p>
+                            <figure class="contEstrellas">
+                                <img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrellaMedia.svg" alt="estrella">
+                            </figure>
+                        </div>
+                        <svg class="lenguajeImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M39.009 115.904 31 25h88l-8.017 90.89L74.946 126 39.01 115.904Z" fill="#E44D26"/><path d="m75 118.273 29.119-8.171 6.852-77.67H75v85.841Z" fill="#F16529"/><path d="M75 66.147H60.422L59.415 54.73H75V43.582H47.375l.264 2.99 2.707 30.725H75v-11.15Zm0 28.956-.049.013-12.268-3.353-.784-8.891h-11.06l1.543 17.505 22.568 6.34.05-.014v-11.6Z" fill="#EBEBEB"/><path d="M74.962 66.147v11.15h13.565L87.25 91.756l-12.287 3.356v11.6l22.585-6.335.165-1.883 2.589-29.352.268-2.995H74.961Zm0-22.565V54.73h26.61l.221-2.505.503-5.652.263-2.991H74.962Z" fill="#fff"/></svg>
+                            
+                    </div>
+                    <div class="lenguajeCont">
+                        <div class="descripcioLenguaje">    
+                            <h4 class="subtitulo4">CSS</h4>
+                            <p class="puntuacion">4.5/5</p>
+                            <figure class="contEstrellas">
+                                <img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrellaMedia.svg" alt="estrella">
+                            </figure>
+                        </div>
+                        <svg class="lenguajeImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M38.933 116.983 31 28h87.176l-7.941 88.97-35.7 9.897-35.602-9.884Z" fill="#1572B6"/><path d="m74.589 119.302 28.847-7.997 6.787-76.03H74.589v84.027Z" fill="#33A9DC"/><path d="M74.589 67.514H89.03l.997-11.176H74.59V45.425h27.366l-.262 2.928-2.683 30.074H74.59V67.514Z" fill="#fff"/><path d="m74.653 95.857-.048.014-12.154-3.281-.777-8.705H50.72l1.529 17.136 22.355 6.205.05-.014V95.857Z" fill="#EBEBEB"/><path d="M88.102 77.966 86.787 92.58l-12.172 3.285v11.355l22.374-6.2.164-1.844 1.898-21.211H88.102Z" fill="#fff"/><path d="M74.626 45.425v10.913H48.265l-.219-2.452-.497-5.533-.261-2.928h27.338Zm-.037 22.09V78.43H62.588l-.219-2.452-.498-5.533-.26-2.928h12.978Z" fill="#EBEBEB"/></svg>                        
+                    </div>
+                    <div class="lenguajeCont">
+                        <div class="descripcioLenguaje">    
+                            <h4 class="subtitulo4">C</h4>
+                            <p class="puntuacion">2/5</p>
+                            <figure class="contEstrellas">
+                                <img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella">
+                            </figure>
+                        </div>
+                        <svg class="lenguajeImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M117.041 47.24 77.612 24.57c-.653-.407-1.55-.57-2.53-.57-.98 0-1.878.245-2.531.57L33.367 47.323C31.98 48.137 31 50.176 31 51.725v45.42c0 .898.163 1.958.816 2.855L119 49.442a5.777 5.777 0 0 0-1.959-2.202Z" fill="#659AD3"/><path d="M32 99.94c.406.658.974 1.233 1.542 1.562l39.117 22.923c.65.411 1.542.575 2.516.575s1.867-.246 2.516-.575l38.955-22.923c1.38-.822 2.354-2.876 2.354-4.437V51.3c0-.74-.081-1.562-.487-2.301L32 99.94Z" fill="#03599C"/><path d="M92.43 84.456c-3.414 6.088-9.918 10.202-17.316 10.202-10.976 0-19.919-9.05-19.919-20.158s8.943-20.158 19.919-20.158c7.398 0 13.902 4.114 17.317 10.285L103 58.456C97.472 48.665 87.065 42 75.114 42 57.39 42 43 56.563 43 74.5 43 92.437 57.39 107 75.114 107c11.87 0 22.276-6.582 27.805-16.291l-10.488-6.253Z" fill="#fff"/></svg>                
+                    </div>
+                    <div class="lenguajeCont">
+                        <div class="descripcioLenguaje">    
+                            <h4 class="subtitulo4">JavaScript</h4>
+                            <p class="puntuacion">2.5/5</p>
+                            <figure class="contEstrellas">
+                                <img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrella.svg" alt="estrella"><img src="imagenes/estrellaMedia.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella"><img src="imagenes/estrellaVacia.svg" alt="estrella">
+                            </figure>
+                        </div>
+                        <svg class="lenguajeImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><path d="M26 25h98v100H26V25Z" fill="#F0DB4F"/><path d="M115.737 100.947c-.713-4.586-3.606-8.438-12.176-12.03-2.977-1.414-6.297-2.427-7.286-4.759-.35-1.357-.397-2.122-.175-2.943.638-2.666 3.717-3.497 6.157-2.733 1.572.545 3.06 1.796 3.957 3.794 4.197-2.81 4.188-2.79 7.119-4.721-1.073-1.72-1.646-2.513-2.348-3.249-2.524-2.914-5.964-4.415-11.464-4.3l-2.866.383c-2.745.717-5.362 2.207-6.896 4.204-4.604 5.4-3.291 14.85 2.311 18.739 5.52 4.282 13.627 5.256 14.663 9.26 1.008 4.901-3.485 6.488-7.951 5.924-3.291-.707-5.122-2.436-7.1-5.58-3.643 2.179-3.643 2.179-7.388 4.405.889 2.007 1.822 2.915 3.31 4.653 7.045 7.387 24.675 7.024 27.837-4.156.129-.384.98-2.944.296-6.891ZM79.311 70.598h-9.098l-.037 24.31c0 5.169.259 9.909-.555 11.361-1.33 2.858-4.78 2.504-6.35 1.949-1.6-.812-2.414-1.968-3.357-3.601-.258-.469-.452-.832-.518-.86L52 108.438c1.23 2.61 3.042 4.874 5.362 6.345 3.467 2.151 8.126 2.81 13 1.654 3.17-.955 5.907-2.933 7.34-5.944 2.07-3.946 1.626-8.724 1.608-14.008.046-8.62 0-17.24 0-25.887Z" fill="#323330"/></svg>
+                    </div>
+                </div>
+                <h3 class="subtitulo3">Tools</h2>
+                <div class="lenguajes__tools">
+                    <div class="toolsCont">
+                        <svg class="toolsImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m123.425 71.064-43.49-43.488a6.416 6.416 0 0 0-9.072 0l-9.03 9.031L73.29 48.063a7.616 7.616 0 0 1 9.647 9.71l11.04 11.042c2.672-.92 5.755-.326 7.887 1.811a7.63 7.63 0 0 1-2.477 12.449 7.63 7.63 0 0 1-10.407-5.555 7.636 7.636 0 0 1 .426-4.402L79.109 62.822l-.001 27.097a7.662 7.662 0 0 1 2.019 1.443 7.635 7.635 0 0 1 0 10.796 7.631 7.631 0 0 1-10.794 0 7.635 7.635 0 0 1 2.5-12.461V62.349a7.559 7.559 0 0 1-2.5-1.666 7.631 7.631 0 0 1-1.643-8.345L57.396 41.044l-29.82 29.819a6.417 6.417 0 0 0 0 9.074l43.49 43.488a6.417 6.417 0 0 0 9.074 0l43.286-43.286a6.419 6.419 0 0 0-.001-9.075Z" fill="#F34F29"/></svg>
+                    </div>
+                    <div class="toolsCont">
+                        <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M75.266 25C46.956 25 24 47.951 24 76.266c0 22.651 14.69 41.867 35.059 48.647 2.561.475 3.502-1.112 3.502-2.466 0-1.223-.048-5.261-.07-9.545-14.262 3.101-17.272-6.049-17.272-6.049-2.332-5.925-5.692-7.501-5.692-7.501-4.652-3.182.35-3.116.35-3.116 5.148.361 7.86 5.283 7.86 5.283 4.572 7.836 11.992 5.571 14.918 4.262.46-3.313 1.789-5.576 3.255-6.856-11.387-1.295-23.358-5.691-23.358-25.335 0-5.597 2.003-10.17 5.283-13.761-.533-1.29-2.288-6.505.496-13.566 0 0 4.304-1.378 14.1 5.255 4.09-1.137 8.477-1.709 12.835-1.728 4.355.02 8.744.59 12.842 1.726 9.785-6.633 14.084-5.255 14.084-5.255 2.79 7.06 1.035 12.276.503 13.566 3.287 3.591 5.276 8.164 5.276 13.761 0 19.69-11.993 24.025-23.408 25.295 1.84 1.591 3.478 4.712 3.478 9.494 0 6.86-.06 12.38-.06 14.069 0 1.364.924 2.963 3.522 2.459 20.357-6.786 35.03-25.996 35.03-48.64-.001-28.312-22.955-51.264-51.267-51.264V25Z" fill="#1b1f23"/><path d="M43.417 98.606c-.113.254-.514.33-.879.157-.373-.167-.581-.514-.46-.77.11-.262.511-.335.882-.159.374.167.586.518.456.773l.001-.001Zm2.076 2.317c-.243.226-.721.121-1.045-.238-.337-.357-.4-.835-.15-1.065.252-.226.716-.119 1.052.238.334.362.4.835.144 1.065Zm2.023 2.951c-.314.219-.829.015-1.146-.441-.314-.457-.314-1.004.008-1.223.317-.219.824-.021 1.146.431.313.462.313 1.01-.008 1.232v.001Zm2.768 2.854c-.28.309-.88.226-1.317-.196-.448-.413-.573-1.001-.292-1.31.286-.311.888-.225 1.328.195.447.412.583 1.002.283 1.31l-.002.001Zm3.82 1.656c-.124.401-.7.584-1.282.412-.58-.175-.959-.645-.84-1.051.119-.404.699-.594 1.284-.411.58.175.959.642.838 1.05Zm4.197.306c.014.423-.478.773-1.087.781-.614.015-1.11-.328-1.116-.744 0-.427.482-.773 1.095-.785.608-.011 1.108.329 1.108.747v.001Zm3.903-.664c.073.412-.35.836-.956.949-.594.11-1.146-.146-1.222-.555-.073-.422.358-.846.952-.956.606-.104 1.15.145 1.226.563v-.001Z" fill="#1b1f23"/></svg>  
+                    </div>
+                    <div class="toolsCont">
+                        <object>
+                            <img src="imagenes/linux.svg" alt="linux">
+                        </object>
+                    </div>
+                    <div class="toolsCont">
+                        <svg class="toolsImg" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.948 60.284s-2.43-1.772.49-4.136l6.798-6.144s1.948-2.07 4.005-.265L100 97.736v23.017s-.031 3.614-4.622 3.216l-69.43-63.685Z" fill="#2489CA"/><path d="M42.02 75 25.743 89.842s-1.672 1.247 0 3.48l7.557 6.891s1.794 1.936 4.449-.265L55 86.824 42.02 75Z" fill="#1070B3"/><path d="M70.442 75 100 52.08l-.191-22.93s-1.262-5.005-5.474-2.398L55 63.104 70.442 75Z" fill="#0877B9"/><path d="M95.86 123.708c1.702 1.786 3.766 1.2 3.766 1.2l22.839-11.528c2.925-2.043 2.515-4.576 2.515-4.576V39.95c0-3.028-3.023-4.073-3.023-4.073l-19.797-9.776c-4.325-2.739-7.16.495-7.16.495s3.643-2.69 5.427 2.399v91.041c0 .627-.13 1.241-.39 1.795-.52 1.08-1.654 2.083-4.365 1.663l.189.214Z" fill="#3C99D4"/></svg>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="seccion seccion--contacto" id="contacto">
+        <h2 class="subtiluloPrincipal">Contactos</h2>
+        <div class="contacto__container">
+           <a href=" https://www.instagram.com/jonathanalanoca/" target="_blank" class="redes redes--instagram">
+                <p class="intagram___titulo">Instagram</p>
+           </a>
+            <a href="https://www.linkedin.com/in/jonathan-alanoca-210a99239/" target="_blank" class="redes redes--linkedin">
+                <p class="intagram__titulo">Linkedin</p>
+            </a>
+            <a href="https://github.com/jonyalanoca" target="_blank" class="redes redes--github">
+                <p class="intagram__titulo">GitHub</p>
+            </a>
+            <a href="mailto:jonyalanoca2@gmail.com" class="redes redes--gmail">
+                <p class="intagram__titulo">Gmail</p>
+            </a >
+            
+            <a href="https://api.whatsapp.com/send?phone=5491125607164" target="_blank" class="redes redes--whatsapp">
+                <p class="intagram__titulo">Whatsapp</p>
+            </a>
+        </div>
+    </section>
+    <div class="waveFooter" style="overflow: hidden;" ><svg class="waveFooter__svg" viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path class="waveFooter__path" d="M0.00,49.99 C198.98,-22.20 316.36,-9.38 500.00,49.99 L503.72,151.48 L0.00,150.00 Z"></path></svg></div>    
+    <footer class="footer" id="footer">
+        <div class="footer__info">
+            <p class="subtitulo4"> Agradecimientos especiales a <strong>Argentina Programa</strong></p>
+            <div>
+                <figure class="footer__logo"><img src="imagenes/APLogo-20-20.png" alt="Logo Argentina programa"></figure>
+                <figure class="footer__logo"><img src="imagenes/LogosInti.png" alt="Logo inti"></figure>
+            </div>
+            <p class="footer__copy">2022 © Jonathan Alanoca. Todos los derechos reservados.</p>
+            <p class="footer__copy">Hecho con ❤️ por Jonathan G. Alanoca</p>
+        </div>
+        <div class="footer__dragonBall">
+            <figure class="gohan">
+                <img src="imagenes/gohan130px.png" alt="gohan130px">
+            </figure>
+            <div class="containerMundo"></div>   
+        </div>
+        <div class="footer__info">
+            <p class="subtitulo4">Recursos de la pagina</p><br>
+            <ul>
+                <li class="footer__li">Imagenes: <a href="https://unsplash.com/es" target="_blank">Unsplash</a></li>
+                <li class="footer__li">Iconos:  <a href="https://devicon.dev/" target="_blank">DevIcon</a> | <a href="https://boxicons.com/" target="_blank">BoxIcons</a></li>
+                <li class="footer__li">SVGs: <a href="https://undraw.co/" target="_blank">Undraw</a> | <a href="https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections" target="_blank">Smooth</a></li>
+                <li class="footer__li">Fuentes: <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                <li class="footer__li">Emojis: <a href="https://emojipedia.org/es/" target="_blank">EmojiPedia</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
