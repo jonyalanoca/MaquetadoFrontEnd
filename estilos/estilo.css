@@ -24,8 +24,74 @@ html{
     scroll-behavior: smooth;
 }
 /* NAVBAR ESTILOS */
+.preloader{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 200;
+    animation: preloader 1s 6s forwards;
+}
 
+.preloader__texto{
+    color: white;
+    font-size: 1.5rem;
+}
+.preloader__barra{
+    width: 300px;
+    height: 1.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.preloader__barra__llenando{
+    width: 1%;
+    height: 100%;
+    background-color: var(--colorBoton);
+    animation: preloadBarra 3s 1s forwards;
+}
+.preloader__cubo{
+    stroke-dasharray:480 ;
+    stroke-dashoffset: 480;
+    animation: preloadSVG 1s 4s forwards;
+}
+.preloader__j{
+    stroke-dasharray:480 ;
+    stroke-dashoffset: 480;
+    animation: preloadSVG 1s 5s forwards;
+}
+.preloader__a{
+    stroke-dasharray:480 ;
+    stroke-dashoffset: 480;
+    animation: preloadSVG 1s 5s forwards;
+}
+    
+@keyframes preloadSVG{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes preloadBarra{
+    to{
+        width: 100%;
+    }
+}
+@keyframes preloader{
+    to{
+        opacity: 0%;
+        top:-200%;
+    }
+}
+
+
+/* FIN DEL PRELOADER */
+/* INICIO DEL NAVBAR */
 .navbar{
+
     min-width: 100%;
     height: 100%;
     position: fixed;
@@ -563,6 +629,9 @@ html{
 /* .seccion--proyectos{
     padding: 0px;
 } */
+.seccion--proyectos{
+    height: max-content;
+}
 .proyectos__proyectoCont{
     background-color: red;
     display: flex;
