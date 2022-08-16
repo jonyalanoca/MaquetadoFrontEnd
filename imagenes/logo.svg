@@ -1,0 +1,5 @@
+<svg width="221" height="275" viewBox="0 0 221 275" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="preloader__cubo" d="M110 102L6 48.6067L110 3L214 48.6067L110 102Z" stroke="white" stroke-width="15"/>
+            <path class="preloader__j" d="M45.1579 104.173V87L102 115.979V270L3 209.358V166.962" stroke="white" stroke-width="15"/>
+            <path class="preloader__a" d="M117 274V195.058M218 212.074V137.037M218 137.037V62L117 116.116V195.058M218 137.037L117 195.058" stroke="white" stroke-width="15"/>
+            </svg>

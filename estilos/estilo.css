@@ -578,6 +578,7 @@ html{
 .about__parafo{
     font-size: 1.1rem;
     color: white;
+    hyphens:auto;
 }
 .about__lista{
     padding: 20px;
@@ -886,6 +887,7 @@ background-color: rgb(26, 26, 26);
     flex-wrap: wrap;
 }
 .redes{
+    text-decoration: none;
     min-width:200px;
     flex-grow: 1;
     display: flex;
@@ -1119,15 +1121,28 @@ background-color: rgb(26, 26, 26);
     .burgerContainer{
         z-index: 53;
     }
+    .lenguajes__skills{
+        gap: 5px;
+        justify-content: center;
+    }
+    .lenguajes__tools{
+        justify-content: center;
+    }
+    .redes{
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width:384px){
     :root{
-        --paddingGeneral:20px 15px;
+        --paddingGeneral:20px 5px;
     }
     .navbar__item{
         grid-column: 2/10;
     }
     .login__cardContainer{
         background-color: transparent;
+    }
+    .estudiosCertificadosCont{
+        height: 190px;
     }
 }
